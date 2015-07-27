@@ -20,12 +20,13 @@ Exmaple: ../auto-heroku/create.sh penguins-rule
 
 This will:
 
-1. create the app,
-2. add the remote to the .git/config,
-3. push the app it to Heroku.
-A heroku push effectively launches the app, installs all bundled gems & a Postgres database.  
-4. It'll run the migrations.
-5. opens the app in your default browser.
+1. Create the app in Heroku
+2. Add the *heroku* remote to the `.git/config`
+3. Push the app to Heroku, which does the following
+  1. Builds the app,
+  2. Installs all bundled gems & an empty Postgres database.
+4. Runs the migrations to build the tables.
+5. Opens the app in your default browser.
 
 Final URL will be (in this example) https://penguins-rule.herokuapp.com.
 
@@ -42,5 +43,5 @@ Will remove the app from your account.
 Only one gotcha.  Since Heroku uses Postgres instead of MySQL, the `mysql2` gem is not neccessary.  But the `pg` gem is.
 Will error on build without the `pg` gem in the `Gemfile`.  So, add that to the requirements and we're good to go.
 
-- Law
-law@cinemasetfree.com
+> Law
+>> law@cinemasetfree.com
