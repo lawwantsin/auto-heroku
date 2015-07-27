@@ -53,10 +53,5 @@ From within the `auto-heroku` directory.
 
 Will remove the app from your account.
 
-### GOTCHA
-
-Only one gotcha.  Since Heroku uses Postgres instead of MySQL, the `mysql2` gem is not neccessary.  But the `pg` gem is.
-Will error on build without the `pg` gem in the `Gemfile`.  So, add that to the requirements and we're good to go.
-
 > Author Lawrence Whiteside
 > law@cinemasetfree.com
