@@ -19,6 +19,7 @@ Exmaple: ../auto-heroku/create.sh penguins-rule
 ```
 
 This will:
+
 1. create the app,
 2. add the remote to the .git/config,
 3. push the app it to Heroku.
@@ -26,7 +27,7 @@ A heroku push effectively launches the app, installs all bundled gems & a Postgr
 4. It'll run the migrations.
 5. opens the app in your default browser.
 
-URL will be (in this example) https://penguins-rule.herokuapp.com.
+Final URL will be (in this example) https://penguins-rule.herokuapp.com.
 
 ### CLEAN UP
 
