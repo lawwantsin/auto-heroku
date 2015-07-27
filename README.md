@@ -23,9 +23,9 @@ Example: https://github.com/lawwantsin/bev_test.git
 ```
 git clone https://github.com/lawwantsin/bev_test.git
 cd bev_test  (now within the app's root directory)
-../auto-heroku/new.sh {MY-APP-NAME} (if these scripts are is under `auto-heroku` in a sibling directory)
+../auto-heroku/new.sh {MY-APP-NAME} (if these scripts are not in your path, but are in the `auto-heroku` directory)
 ```
-Example: `../auto-heroku/create.sh penguins-rule`
+Example: `../auto-heroku/new.sh penguins-rule`
 
 This will:
 
