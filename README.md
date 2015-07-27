@@ -1,20 +1,17 @@
-### SETUP
+### Setup
 
 `setup.sh`
 
-1. will download the [Heroku Toolbelt](https://toolbelt.heroku.com/).  
+Run once.
+
+1. Will download the [Heroku Toolbelt](https://toolbelt.heroku.com/).  
 The toolbelt is just an executable that performs the rest of the commands in `new.sh` and `clean.sh`
-2. It will then prompt you to login to Heroku.
-
-Setup a new account here: https://signup.heroku.com/login
-
-No purchase necessary.
-
+2. It will then prompt you to login to Heroku.  Setup a new account here: https://signup.heroku.com/login (No purchase necessary)
 3. It will lastly make all `.sh` scripts in this directory executable.
 
-Optionally, add this directory to your PATH or dump them in a directory that's already in your PATH.
+Optionally, add this directory to your PATH or dump these scripts in a directory that's already in your PATH.
 
-### USEAGE
+### Usage
 
 `new.sh`
 
@@ -42,7 +39,7 @@ This will:
 
 Final URL will be (in this example) https://penguins-rule.herokuapp.com.
 
-### CLEAN UP
+### Clean up
 
 `clean.sh`
 
@@ -54,5 +51,6 @@ From within the `auto-heroku` directory.
 
 Will remove the app from your account.
 
-> Author Lawrence Whiteside
+> Author
+> Lawrence Whiteside
 > law@cinemasetfree.com
