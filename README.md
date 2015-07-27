@@ -33,11 +33,12 @@ This will:
 
 1. Create the app in Heroku
 2. Add the *heroku* remote to the `.git/config`
-3. Push the app to Heroku, which does the following
+3. Adds the `pg gem` to the end of the Gemfile so it plays well with Postgres.
+4. Push the app to Heroku, which does the following
   1. Builds the app,
   2. Installs all bundled gems & an empty Postgres database.
-4. Runs the migrations to build the tables.
-5. Opens the app in your default browser.
+5. Runs the migrations to build the tables.
+6. Opens the app in your default browser.
 
 Final URL will be (in this example) https://penguins-rule.herokuapp.com.
 
