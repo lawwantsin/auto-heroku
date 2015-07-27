@@ -7,10 +7,12 @@ The toolbelt is just an executable that performs the rest of the commands in `ne
 2. It will then prompt you to login to Heroku.
 
 Setup a new account here: https://signup.heroku.com/login
+
 No purchase necessary.
 
-3. it will then make all `.sh` scripts in this directory executable.
-Optionally, add this directory to your $PATH or dump them in a directory that's already in your PATH.
+3. It will lastly make all `.sh` scripts in this directory executable.
+
+Optionally, add this directory to your PATH or dump them in a directory that's already in your PATH.
 
 ### USEAGE
 
@@ -44,7 +46,9 @@ Final URL will be (in this example) https://penguins-rule.herokuapp.com.
 `clean.sh`
 
 After the review process is over and you don't want this app cluttering your Heroku account.
-From within the auto-heroku directory.
+
+From within the `auto-heroku` directory.
+
 `./clean.sh penguins-rule`
 
 Will remove the app from your account.
@@ -54,5 +58,5 @@ Will remove the app from your account.
 Only one gotcha.  Since Heroku uses Postgres instead of MySQL, the `mysql2` gem is not neccessary.  But the `pg` gem is.
 Will error on build without the `pg` gem in the `Gemfile`.  So, add that to the requirements and we're good to go.
 
-> Law
+> Author Lawrence Whiteside
 > law@cinemasetfree.com
