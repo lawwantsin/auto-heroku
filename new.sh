@@ -5,12 +5,18 @@
 heroku apps:create $1
 
 # Install Heroku specific gems if not already there.
-if ! grep -q "gem 'pg'" "Gemfile";
+
+if ! grep -q "gem 'pg'" "Gemfile"
   then
   echo "gem 'pg'" >> Gemfile
-  if ! grep -q "gem 'rails_12factor'" "Gemfile" echo "gem 'rails_12factor'" >> Gemfile
-  bundle install
 fi
+
+if ! grep -q "gem 'rails_12factor'" "Gemfile"
+  then
+  echo "gem 'rails_12factor'" >> Gemfile
+fi
+
+bundle install
 
 # Commit latest changes.
 git add .
